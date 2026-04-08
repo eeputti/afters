@@ -334,11 +334,18 @@ export default function Page() {
     <main lang={lang} className="min-h-screen bg-[#FCFCFD] text-[#0F172A]">
       <header className="sticky top-0 z-40 border-b border-[#DCEEFF] bg-[#FCFCFD]/95 backdrop-blur">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-10">
-          <a href="#top" className="flex items-center gap-3 text-xl font-semibold tracking-tight">
-            <span className="grid h-9 w-9 place-items-center rounded-xl bg-[#0F172A] text-[#FCFCFD]">↗</span>
-            <span>
-              Flo<span className="inline-block rounded-full border-2 border-[#2CB1A1] px-1.5">o</span>won
-            </span>
+          <a href="#top" className="flex items-center gap-3" aria-label="Flowon home">
+            <img
+              src="/brand/flowon-symbol.svg"
+              alt=""
+              aria-hidden="true"
+              className="h-9 w-9"
+            />
+            <img
+              src="/brand/flowon-logo-horizontal-dark.svg"
+              alt="Flowon"
+              className="h-6 w-auto"
+            />
           </a>
           <nav className="hidden items-center gap-7 text-sm text-[#1E293B] md:flex">
             <a href="#problem" className="hover:text-[#2CB1A1]">{t.nav.problem}</a>
@@ -522,7 +529,14 @@ export default function Page() {
       </section>
 
       <footer className="border-t border-[#DCEEFF] bg-[#FCFCFD] px-6 py-10 text-center text-sm text-[#1E293B]">
-        {t.footer}
+        <div className="mx-auto flex max-w-7xl flex-col items-center gap-4">
+          <img
+            src="/brand/flowon-logo-horizontal-dark.svg"
+            alt="Flowon"
+            className="h-6 w-auto"
+          />
+          <p>Flowon is the simple revenue recovery system for modern clinics.</p>
+        </div>
       </footer>
     </main>
   );
