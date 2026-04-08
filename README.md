@@ -1,25 +1,21 @@
 # afters
 
-Vite + React + Tailwind landing page for the **afters** brand.
+Next.js App Router -sivusto afters-palvelulle.
 
-## Local development
+## Kehitys
 
 ```bash
 npm install
 npm run dev
 ```
 
-## Production build
+## Tuotantoversio
 
 ```bash
 npm run build
-npm run preview
+npm run start
 ```
 
-## Deploy to Vercel
+## Vercel
 
-This repository is ready for Vercel as a Vite project:
-
-- **Framework preset:** `Vite`
-- **Build command:** `npm run build`
-- **Output directory:** `dist`
+Projekti on valmis Vercel-deployyn Next.js-projektina.
