@@ -1,0 +1,16 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="630" fill="#0F172A"/>
+  <circle cx="1010" cy="110" r="160" fill="#1E293B" opacity="0.18"/>
+  <circle cx="1130" cy="520" r="220" fill="#2CB1A1" opacity="0.12"/>
+  <rect x="72" y="72" width="94" height="94" rx="22" fill="#FCFCFD"/>
+  <path d="M118 90c-15.5 0-28 12.5-28 28s12.5 28 28 28c8.9 0 17-4.2 22.2-11.2" stroke="#1E293B" stroke-width="6" stroke-linecap="round"/>
+  <path d="M134 101h11v11" stroke="#2CB1A1" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M145 101l-16 16" stroke="#2CB1A1" stroke-width="6" stroke-linecap="round"/>
+  <path d="M109 120l6 6 13-13" stroke="#0F172A" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="188" y="135" fill="#FCFCFD" font-size="48" font-family="Inter, Arial, sans-serif" font-weight="700">Flowon</text>
+  <text x="72" y="278" fill="#FCFCFD" font-size="74" font-family="Inter, Arial, sans-serif" font-weight="700">Bring Patients Back.</text>
+  <text x="72" y="356" fill="#FCFCFD" font-size="74" font-family="Inter, Arial, sans-serif" font-weight="700">Fill Empty Slots.</text>
+  <text x="72" y="434" fill="#DCEEFF" font-size="32" font-family="Inter, Arial, sans-serif" font-weight="400">The simple revenue recovery system for modern clinics.</text>
+  <rect x="72" y="484" width="248" height="56" rx="14" fill="#2CB1A1"/>
+  <text x="114" y="520" fill="#0F172A" font-size="24" font-family="Inter, Arial, sans-serif" font-weight="700">Get The Free Pilot</text>
+</svg>
