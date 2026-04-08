@@ -1,0 +1,20 @@
+{
+  "name": "Flowon",
+  "short_name": "Flowon",
+  "description": "Recover lost clinic revenue with simple SMS follow-up automation.",
+  "theme_color": "#0F172A",
+  "background_color": "#FCFCFD",
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "/favicon/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

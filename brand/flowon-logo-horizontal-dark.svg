@@ -1,0 +1,8 @@
+<svg width="760" height="200" viewBox="0 0 760 200" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Flowon logo dark">
+  <rect x="0" y="22" width="156" height="156" rx="34" fill="#0F172A"/>
+  <path d="M78 52C51.5 52 30 73.5 30 100s21.5 48 48 48c15.5 0 29.3-7.3 38.2-18.8" stroke="#DCEEFF" stroke-width="12" stroke-linecap="round"/>
+  <path d="M103 73h19v19" stroke="#2CB1A1" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M122 73L95 100" stroke="#2CB1A1" stroke-width="12" stroke-linecap="round"/>
+  <path d="M62 101l10 10 22-22" stroke="#FCFCFD" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="190" y="122" fill="#0F172A" font-size="92" font-family="Inter, Manrope, Arial, sans-serif" font-weight="700" letter-spacing="-2">Flowon</text>
+</svg>
