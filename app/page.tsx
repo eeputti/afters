@@ -1,7 +1,6 @@
 "use client";
 
-import { Suspense, useMemo } from "react";
-import { usePathname, useRouter, useSearchParams } from "next/navigation";
+import { useEffect, useMemo, useState } from "react";
 
 type Language = "en" | "fi";
 
@@ -316,26 +315,29 @@ const builtForFi = ["fysioterapeuteille", "hammaslääkäreille", "terapeuteille
 
 
 export default function Page() {
-  return (
-    <Suspense fallback={null}>
-      <PageContent />
-    </Suspense>
-  );
-}
+  const [lang, setLang] = useState<Language>("en");
 
-function PageContent() {
+  useEffect(() => {
+    if (typeof window === "undefined") {
+      return;
+    }
 
-  const searchParams = useSearchParams();
-  const pathname = usePathname();
-  const router = useRouter();
+    const params = new URLSearchParams(window.location.search);
+    setLang(params.get("lang") === "fi" ? "fi" : "en");
+  }, []);
 
-  const lang = (searchParams.get("lang") === "fi" ? "fi" : "en") as Language;
   const t = content[lang];
 
   const switchLanguage = (nextLang: Language) => {
-    const params = new URLSearchParams(searchParams.toString());
-    params.set("lang", nextLang);
-    router.replace(`${pathname}?${params.toString()}`);
+    setLang(nextLang);
+
+    if (typeof window === "undefined") {
+      return;
+    }
+
+    const url = new URL(window.location.href);
+    url.searchParams.set("lang", nextLang);
+    window.history.replaceState({}, "", url.toString());
   };
 
   const builtForItems = useMemo(() => (lang === "fi" ? builtForFi : builtFor), [lang]);
