@@ -6,8 +6,24 @@ const title = "Flowon — Recover Lost Clinic Revenue";
 const description =
   "Flowon helps clinics recover missed revenue by bringing patients back for follow-ups and filling cancelled appointments automatically with SMS.";
 
+const getMetadataBase = () => {
+  const rawSiteUrl = process.env.NEXT_PUBLIC_SITE_URL?.trim();
+
+  if (!rawSiteUrl) {
+    return new URL("http://localhost:3000");
+  }
+
+  const normalizedSiteUrl = /^https?:\/\//i.test(rawSiteUrl) ? rawSiteUrl : `https://${rawSiteUrl}`;
+
+  try {
+    return new URL(normalizedSiteUrl);
+  } catch {
+    return new URL("http://localhost:3000");
+  }
+};
+
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000"),
+  metadataBase: getMetadataBase(),
   title,
   description,
   manifest: "/site.webmanifest",

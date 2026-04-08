@@ -313,6 +313,7 @@ const content: Record<Language, Dictionary> = {
 const builtFor = ["Physiotherapists", "Dentists", "Therapists", "Small Clinics"];
 const builtForFi = ["fysioterapeuteille", "hammaslääkäreille", "terapeuteille", "pienille klinikoille"];
 
+
 export default function Page() {
   const [lang, setLang] = useState<Language>("en");
 
