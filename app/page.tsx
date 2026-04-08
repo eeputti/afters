@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo } from "react";
+import { Suspense, useMemo } from "react";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 
 type Language = "en" | "fi";
@@ -314,7 +314,17 @@ const content: Record<Language, Dictionary> = {
 const builtFor = ["Physiotherapists", "Dentists", "Therapists", "Small Clinics"];
 const builtForFi = ["fysioterapeuteille", "hammaslääkäreille", "terapeuteille", "pienille klinikoille"];
 
+
 export default function Page() {
+  return (
+    <Suspense fallback={null}>
+      <PageContent />
+    </Suspense>
+  );
+}
+
+function PageContent() {
+
   const searchParams = useSearchParams();
   const pathname = usePathname();
   const router = useRouter();
