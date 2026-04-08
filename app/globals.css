@@ -12,7 +12,17 @@ html {
 
 body {
   margin: 0;
-  background: #f6f2ea;
-  color: #26211d;
-  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  background: #fcfcfd;
+  color: #0f172a;
+  font-family: var(--font-inter), Inter, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-manrope), Manrope, var(--font-inter), sans-serif;
+  letter-spacing: -0.02em;
 }
